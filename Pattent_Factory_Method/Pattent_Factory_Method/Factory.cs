@@ -4,14 +4,11 @@ using System.Text;
 
 namespace Pattent_Factory_Method
 {
-    abstract class Factory
+    interface FactoryInterface
     {
-        public string Name { get; set; }
-
-        public Factory(string n)
-        {
-            Name = n;
-        }
-        abstract public Car Create();
+        string getCarName();
+        string getCarModel();
+        string getCarEngine();
+        string getCarEquipmet();
     }
 }

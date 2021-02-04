@@ -6,63 +6,31 @@ namespace Pattent_Factory_Method
     {
         static void Main(string[] args)
         {
-            //Car 1
-            Factory fac = new FactoryCar("");
-            Car toyota = fac.Create();
+            Toyota toyota = new Toyota();
+            Console.Write(toyota.getCarName());
+            Console.Write(toyota.getCarModel());
+            Console.Write(toyota.getCarEngine());
+            Console.Write(toyota.getCarEquipmet());
 
-            fac = new Model1("");
-            Car camry30 = fac.Create();
+            Mers mers = new Mers();
+            Console.Write(mers.getCarName());
+            Console.Write(mers.getCarModel());
+            Console.Write(mers.getCarEngine());
+            Console.Write(mers.getCarEquipmet());
 
-            fac = new FactoryEngine1("");
-            Car eng24 = fac.Create();
+            BMW bmw = new BMW();
+            Console.Write(bmw.getCarName());
+            Console.Write(bmw.getCarModel());
+            Console.Write(bmw.getCarEngine());
+            Console.Write(bmw.getCarEquipmet());
 
-            fac = new FactoriyEquipmentcs1("");
-            Car camrylux = fac.Create();
-            Console.WriteLine();
-
-
-            //Car 2
-            fac = new FactoryCar("");
-            Car toyota2 = fac.Create();
-
-            fac = new Model2("");
-            Car camry40 = fac.Create();
-
-            fac = new FactoryEngine2("");
-            Car eng30 = fac.Create();
-
-            fac = new FactoriyEquipmentcs2("");
-            Car camryst = fac.Create();
-            Console.WriteLine();
+            Skoda skoda = new Skoda();
+            Console.Write(skoda.getCarName());
+            Console.Write(skoda.getCarModel());
+            Console.Write(skoda.getCarEngine());
+            Console.Write(skoda.getCarEquipmet());
 
 
-            //Car 3
-            fac = new FactoryCar1("");
-            Car mers1 = fac.Create();
-
-            fac = new Model3("");
-            Car slk1 = fac.Create();
-
-            fac = new FactoryEngine3("");
-            Car eng1_2 = fac.Create();
-
-            fac = new FactoriyEquipmentcs2("");
-            Car mersst = fac.Create();
-            Console.WriteLine();
-
-            //Car 4
-            fac = new FactoryCar1("");
-            Car mers2 = fac.Create();
-
-            fac = new Model3("");
-            Car slk2 = fac.Create();
-
-            fac = new FactoryEngine2("");
-            Car eng2_3 = fac.Create();
-
-            fac = new FactoriyEquipmentcs1("");
-            Car merslux2 = fac.Create();
-            Console.WriteLine();
 
             Console.ReadLine();
         }
