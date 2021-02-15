@@ -1,14 +1,24 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Factory_Method
 {
-    public class BMWProduct : IProduct
+    class BMWProduct : Car
     {
-        public string Operation()
+        public BMWProduct()
         {
-            return "{Result BMW}";
+            Console.Write("BMW ");
+            model();
+            Engine();
+        }
+
+        public void Engine()
+        {
+            Console.Write("2.8 Biturbo \n");
+        }
+
+        public void model()
+        {
+            Console.Write("M4 ");
         }
     }
 }

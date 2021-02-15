@@ -1,14 +1,27 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Factory_Method
 {
-    public class ToyotaProduct : IProduct
+    abstract class Car
+    { }
+
+    class ToyotaProduct : Car
     {
-        public string Operation()
+        public ToyotaProduct()
         {
-            return "{Result Toyota}";
+            Console.Write("Toyota ");
+            model();
+            Engine_2_4();
+        }
+
+        void Engine_2_4()
+        {
+             Console.Write("2.4 \n");
+        }
+
+        void model()
+        {
+            Console.Write("Camry ");
         }
     }
 }

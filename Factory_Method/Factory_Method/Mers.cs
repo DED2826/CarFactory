@@ -1,10 +1,10 @@
 ﻿namespace Factory_Method
 {
-    class BMW : CarCreator
+    class Mers : CarCreator
     {
         public override Car Create()
         {
-            return new BMWProduct();
+            return new MersProduct();
         }
     }
 }

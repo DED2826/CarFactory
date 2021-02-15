@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Factory_Method
+﻿namespace Factory_Method
 {
     class Program
     {
